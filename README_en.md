@@ -11,8 +11,8 @@ It contains documents in both Japanese and English, suitable for beginners getti
 Git_Example/
 ├── docs/
 │   ├── jp/                                         # Japanese documents
-│   │   ├── 01_server_git_workflow_jp.md            # ① Clone from bare repository and push
-│   │   ├── 02_server_bare_repo_create_jp.md        # ② Create a bare repository and push
+│   │   ├── 01_server_bare_repo_create_jp.md        # ① Create a bare repository and push
+│   │   ├── 02_server_git_workflow_jp.md            # ② Clone from bare repository and push
 │   │   ├── 03_github_push_jp.md                    # ③ Create GitHub remote repo and push
 │   │   ├── 04_multi_remote_jp.md                   # ④ Manage GitHub and bare repo as remotes (advanced)
 │   │   ├── git_workflow_jp.md                      # Git command reference
@@ -20,8 +20,8 @@ Git_Example/
 │   │   ├── github_token_https_jp.md                # Personal Access Token for HTTPS
 │   │   └── vscode_ssh_agent_jp.md                  # SSH agent setup for VSCode GitHub integration
 │   └── en/                                         # English documents
-│       ├── 01_server_git_workflow_en.md            # ① Clone from bare repository and push
-│       ├── 02_server_bare_repo_create_en.md        # ② Create a bare repository and push
+│       ├── 01_server_bare_repo_create_en.md        # ① Create a bare repository and push
+│       ├── 02_server_git_workflow_en.md            # ② Clone from bare repository and push
 │       ├── 03_github_push_en.md                    # ③ Create GitHub remote repo and push
 │       ├── 04_multi_remote_en.md                   # ④ Manage GitHub and bare repo as remotes (advanced)
 │       ├── git_workflow_en.md                      # Git command reference
@@ -32,18 +32,23 @@ Git_Example/
 └── README_en.md
 ```
 
+## How to Use This Repository
+
+**Start by reading documents 01–04 in order.** They cover everything from setting up a repository on the server to advanced GitHub integration.
+The remaining documents are supplementary — refer to them as needed for command reference or configuration.
+
 ## Documentation
 
-### Server Workflow (Recommended Reading Order)
+### Server Workflow (Read in This Order)
 
 | # | Title | English | Japanese |
 |---|-------|---------|----------|
-| 1 | Clone from bare repository and push | [EN](docs/en/01_server_git_workflow_en.md) | [JP](docs/jp/01_server_git_workflow_jp.md) |
-| 2 | Create a bare repository and push | [EN](docs/en/02_server_bare_repo_create_en.md) | [JP](docs/jp/02_server_bare_repo_create_jp.md) |
+| 1 | Create a bare repository and push | [EN](docs/en/01_server_bare_repo_create_en.md) | [JP](docs/jp/01_server_bare_repo_create_jp.md) |
+| 2 | Clone from bare repository and push | [EN](docs/en/02_server_git_workflow_en.md) | [JP](docs/jp/02_server_git_workflow_jp.md) |
 | 3 | Create GitHub remote repo and push | [EN](docs/en/03_github_push_en.md) | [JP](docs/jp/03_github_push_jp.md) |
 | 4 | Manage GitHub and bare repo as remotes (advanced) | [EN](docs/en/04_multi_remote_en.md) | [JP](docs/jp/04_multi_remote_jp.md) |
 
-### Reference & Supplementary
+### Reference & Supplementary (Refer as Needed)
 
 | Title | English | Japanese |
 |-------|---------|----------|

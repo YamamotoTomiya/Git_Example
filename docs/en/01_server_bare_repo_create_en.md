@@ -325,6 +325,6 @@ git push origin master
 
 ## Related Documents
 
-- [Cloning from a Bare Repository and Pushing](01_server_git_workflow_en.md)
+- [Cloning from a Bare Repository and Pushing](02_server_git_workflow_en.md)
 - [Git Basic Command Reference](git_workflow_en.md)
 - [Git Workflow Step by Step](git_workflow_steps_en.md)
