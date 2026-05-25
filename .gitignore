@@ -1,5 +1,0 @@
-output/*
-!output/.gitkeep
-slurm-*.out
-job_scripts/vaccine/output/*.out
-job_scripts/itc25/output/*.out
