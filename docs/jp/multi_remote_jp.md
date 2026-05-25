@@ -36,10 +36,10 @@ git remote -v
 以下のように 2 つ登録されていれば準備完了：
 
 ```
-origin  git@github.com:YamamotoTomiya/vaccine_example.git (fetch)
-origin  git@github.com:YamamotoTomiya/vaccine_example.git (push)
-server  /home/repository/tyamamoto/server/vaccine_example.git (fetch)
-server  /home/repository/tyamamoto/server/vaccine_example.git (push)
+origin  git@github.com:<username>/my_project.git (fetch)
+origin  git@github.com:<username>/my_project.git (push)
+server  /home/repository/<username>/server/my_project.git (fetch)
+server  /home/repository/<username>/server/my_project.git (push)
 ```
 
 ---
@@ -51,17 +51,17 @@ server  /home/repository/tyamamoto/server/vaccine_example.git (push)
 ### 1-1. ベアリポジトリを remote として追加する
 
 ```bash
-git remote add server /home/repository/tyamamoto/server/vaccine_example.git
+git remote add server /home/repository/<username>/server/my_project.git
 ```
 
 ### 1-2. 登録を確認する
 
 ```bash
 git remote -v
-# origin  git@github.com:YamamotoTomiya/vaccine_example.git (fetch)
-# origin  git@github.com:YamamotoTomiya/vaccine_example.git (push)
-# server  /home/repository/tyamamoto/server/vaccine_example.git (fetch)
-# server  /home/repository/tyamamoto/server/vaccine_example.git (push)
+# origin  git@github.com:<username>/my_project.git (fetch)
+# origin  git@github.com:<username>/my_project.git (push)
+# server  /home/repository/<username>/server/my_project.git (fetch)
+# server  /home/repository/<username>/server/my_project.git (push)
 ```
 
 > **ポイント：** `git remote add <名前> <URL>` の `<名前>` は任意。
@@ -86,8 +86,8 @@ git push server main
 ### ブランチを両方に push する
 
 ```bash
-git push origin feature/add_yamamoto
-git push server feature/add_yamamoto
+git push origin feature/add_xxx
+git push server feature/add_xxx
 ```
 
 > **ポイント：** どちらか一方だけに push することもできる。
@@ -180,7 +180,7 @@ push 時に明示的に指定する（`git push server main`）。
 
 ```bash
 # 作業中は server に push
-git push server feature/add_yamamoto
+git push server feature/add_xxx
 
 # main にマージ後、GitHub にも push
 git push origin main
@@ -210,7 +210,7 @@ git push server main
 
 ```bash
 # 1. server remote を追加する（初回のみ）
-git remote add server /home/repository/tyamamoto/server/vaccine_example.git
+git remote add server /home/repository/<username>/server/my_project.git
 
 # 2. 両方の remote を確認する
 git remote -v
@@ -247,5 +247,3 @@ git log server/main..origin/main --oneline
 ## 関連ドキュメント
 
 - [GitHub Remote Repository の作成と Push](github_push_jp.md)
-- [ベアリポジトリを自分で作って push する](server_bare_repo_create_jp.md)
-- [ベアリポジトリからのクローンと push](server_git_workflow_jp.md)

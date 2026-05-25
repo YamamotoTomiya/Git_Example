@@ -16,8 +16,8 @@ cd <REPOSITORY_NAME>
 例：
 
 ```bash
-git clone git@github.com:YamamotoTomiya/vaccine_example.git
-cd vaccine_example
+git clone git@github.com:<username>/my_project.git
+cd my_project
 ```
 
 ---
@@ -38,7 +38,7 @@ git pull origin main
 `main` を汚さないよう、変更用のブランチを新たに作成。
 
 ```bash
-git checkout -b feature/add_tomiya
+git checkout -b feature/add_xxx
 ```
 
 ブランチ名の例：
@@ -103,7 +103,7 @@ git commit -m "Delete example.py"
 ローカルブランチを GitHub にアップロード。プッシュ後、GitHub がプルリクエストの URL を表示することがある。
 
 ```bash
-git push origin feature/add_tomiya
+git push origin feature/add_xxx
 ```
 
 ---
@@ -119,10 +119,10 @@ git pull origin main
 
 | コマンド | 説明 |
 |---------|------|
-| `git diff main..feature/add_tomiya` | main とフィーチャーブランチの全差分を表示 |
-| `git diff --name-only main..feature/add_tomiya` | 変更されたファイル名のみ表示 |
-| `git log --oneline main..feature/add_tomiya` | フィーチャーブランチにあって main にないコミットを一覧表示 |
-| `git log --oneline --graph main..feature/add_tomiya` | 同上をグラフ付きで表示 |
+| `git diff main..feature/add_xxx` | main とフィーチャーブランチの全差分を表示 |
+| `git diff --name-only main..feature/add_xxx` | 変更されたファイル名のみ表示 |
+| `git log --oneline main..feature/add_xxx` | フィーチャーブランチにあって main にないコミットを一覧表示 |
+| `git log --oneline --graph main..feature/add_xxx` | 同上をグラフ付きで表示 |
 
 ---
 
@@ -131,7 +131,7 @@ git pull origin main
 フィーチャーブランチをローカルの `main` にマージ。
 
 ```bash
-git merge feature/add_tomiya
+git merge feature/add_xxx
 ```
 
 コンフリクトがなければ、自動的にマージが完了。
@@ -161,19 +161,19 @@ git push server main
 ローカルブランチを削除する：
 
 ```bash
-git branch -d feature/add_tomiya
+git branch -d feature/add_xxx
 ```
 
 リモートブランチを削除する：
 
 ```bash
-git push origin --delete feature/add_tomiya
+git push origin --delete feature/add_xxx
 ```
 
 別のリモートの場合：
 
 ```bash
-git push server --delete feature/add_tomiya
+git push server --delete feature/add_xxx
 ```
 
 ---
@@ -213,7 +213,7 @@ git rm --cached <FILE_NAME>
 例：
 
 ```bash
-git rm --cached job_scripts/itc25/output/job_example.sh-14074.out
+git rm --cached path/to/file.txt
 ```
 
 ---

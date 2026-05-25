@@ -16,8 +16,8 @@ cd <REPOSITORY_NAME>
 Example:
 
 ```bash
-git clone git@github.com:YamamotoTomiya/vaccine_example.git
-cd vaccine_example
+git clone git@github.com:<username>/my_project.git
+cd my_project
 ```
 
 ---
@@ -38,7 +38,7 @@ git pull origin main
 Create a new branch for your changes so that `main` stays clean.
 
 ```bash
-git checkout -b feature/add_tomiya
+git checkout -b feature/add_xxx
 ```
 
 Branch naming conventions:
@@ -103,7 +103,7 @@ git commit -m "Delete example.py"
 Upload your local branch to GitHub. GitHub will usually display a Pull Request URL after pushing.
 
 ```bash
-git push origin feature/add_tomiya
+git push origin feature/add_xxx
 ```
 
 ---
@@ -119,10 +119,10 @@ git pull origin main
 
 | Command | Description |
 |---------|-------------|
-| `git diff main..feature/add_tomiya` | Full diff between main and the feature branch |
-| `git diff --name-only main..feature/add_tomiya` | Show only changed file names |
-| `git log --oneline main..feature/add_tomiya` | List commits in feature branch not yet in main |
-| `git log --oneline --graph main..feature/add_tomiya` | Same as above, with a graph view |
+| `git diff main..feature/add_xxx` | Full diff between main and the feature branch |
+| `git diff --name-only main..feature/add_xxx` | Show only changed file names |
+| `git log --oneline main..feature/add_xxx` | List commits in feature branch not yet in main |
+| `git log --oneline --graph main..feature/add_xxx` | Same as above, with a graph view |
 
 ---
 
@@ -131,7 +131,7 @@ git pull origin main
 Merge your feature branch into `main` locally.
 
 ```bash
-git merge feature/add_tomiya
+git merge feature/add_xxx
 ```
 
 If there are no conflicts, the merge completes automatically.
@@ -161,19 +161,19 @@ Remove the branch both locally and on the remote once the merge is complete.
 Delete the local branch:
 
 ```bash
-git branch -d feature/add_tomiya
+git branch -d feature/add_xxx
 ```
 
 Delete the remote branch:
 
 ```bash
-git push origin --delete feature/add_tomiya
+git push origin --delete feature/add_xxx
 ```
 
 For another remote:
 
 ```bash
-git push server --delete feature/add_tomiya
+git push server --delete feature/add_xxx
 ```
 
 ---
@@ -213,7 +213,7 @@ git rm --cached <FILE_NAME>
 Example:
 
 ```bash
-git rm --cached job_scripts/itc25/output/job_example.sh-14074.out
+git rm --cached path/to/file.txt
 ```
 
 ---

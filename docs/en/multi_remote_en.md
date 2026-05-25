@@ -36,10 +36,10 @@ git remote -v
 If both remotes are registered, you are ready to go:
 
 ```
-origin  git@github.com:YamamotoTomiya/vaccine_example.git (fetch)
-origin  git@github.com:YamamotoTomiya/vaccine_example.git (push)
-server  /home/repository/tyamamoto/server/vaccine_example.git (fetch)
-server  /home/repository/tyamamoto/server/vaccine_example.git (push)
+origin  git@github.com:<username>/my_project.git (fetch)
+origin  git@github.com:<username>/my_project.git (push)
+server  /home/repository/<username>/server/my_project.git (fetch)
+server  /home/repository/<username>/server/my_project.git (push)
 ```
 
 ---
@@ -51,17 +51,17 @@ Steps to add `server` when `origin` (GitHub) is already registered.
 ### 1-1. Add the bare repository as a remote
 
 ```bash
-git remote add server /home/repository/tyamamoto/server/vaccine_example.git
+git remote add server /home/repository/<username>/server/my_project.git
 ```
 
 ### 1-2. Confirm the registration
 
 ```bash
 git remote -v
-# origin  git@github.com:YamamotoTomiya/vaccine_example.git (fetch)
-# origin  git@github.com:YamamotoTomiya/vaccine_example.git (push)
-# server  /home/repository/tyamamoto/server/vaccine_example.git (fetch)
-# server  /home/repository/tyamamoto/server/vaccine_example.git (push)
+# origin  git@github.com:<username>/my_project.git (fetch)
+# origin  git@github.com:<username>/my_project.git (push)
+# server  /home/repository/<username>/server/my_project.git (fetch)
+# server  /home/repository/<username>/server/my_project.git (push)
 ```
 
 > **Note:** The name in `git remote add <name> <URL>` is arbitrary.
@@ -86,8 +86,8 @@ git push server main
 ### Push a branch to both remotes
 
 ```bash
-git push origin feature/add_yamamoto
-git push server feature/add_yamamoto
+git push origin feature/add_xxx
+git push server feature/add_xxx
 ```
 
 > **Note:** You can push to just one of the remotes at any time.
@@ -183,7 +183,7 @@ git push server main
 
 ```bash
 # Push to server during active development
-git push server feature/add_yamamoto
+git push server feature/add_xxx
 
 # After merging to main, push to GitHub as well
 git push origin main
@@ -213,7 +213,7 @@ git push server main
 
 ```bash
 # 1. Add the server remote (first time only)
-git remote add server /home/repository/tyamamoto/server/vaccine_example.git
+git remote add server /home/repository/<username>/server/my_project.git
 
 # 2. Verify both remotes
 git remote -v
@@ -250,5 +250,3 @@ git log server/main..origin/main --oneline
 ## Related Documents
 
 - [Creating a Remote Repository on GitHub and Pushing Code](github_push_en.md)
-- [Creating a Bare Repository on the Server and Pushing](server_bare_repo_create_en.md)
-- [Git Workflow Using a Bare Repository on the Server](server_git_workflow_en.md)
