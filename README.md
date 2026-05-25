@@ -1,23 +1,14 @@
-# vaccine_example
+# Git & GitHub 入門リポジトリ
 
-**vaccine** サーバーおよび **itc** サーバーで SLURM ジョブを実行するためのサンプルプロジェクトです。
+Git および GitHub の使い方を学ぶためのオープンなリポジトリです。
+日本語・英語のドキュメントを収録しており、初めて Git を使う方から、GitHub との連携や応用的な運用を学びたい方まで活用できます。
+
+> English version: [README_en.md](README_en.md)
 
 ## リポジトリ構成
 
 ```
-vaccine_example/
-├── src/
-│   ├── main.py                    # シンプルなテストスクリプト
-│   └── machin_like_formula.py     # Machin-like formula による円周率計算
-├── job_scripts/
-│   ├── vaccine/                   # vaccine サーバー用ジョブスクリプト
-│   │   ├── job_example.sh         # src/main.py を実行
-│   │   ├── job_machin.sh          # src/machin_like_formula.py を実行
-│   │   └── output/                # SLURM ログ出力ディレクトリ
-│   └── itc25/                     # itc サーバー用ジョブスクリプト
-│       └── output/                # SLURM ログ出力ディレクトリ
-│           ├── job_example.sh     # src/main.py を実行
-│           └── job_machine.sh     # src/main.py を実行
+Git_Example/
 ├── docs/
 │   ├── jp/                                      # 日本語ドキュメント
 │   │   ├── git_workflow_jp.md                   # Git コマンドリファレンス
@@ -37,65 +28,11 @@ vaccine_example/
 │       ├── server_git_workflow_en.md            # Clone from bare repository and push
 │       ├── vscode_ssh_agent_en.md               # SSH agent setup for VSCode GitHub integration
 │       └── multi_remote_en.md                   # Manage GitHub and bare repo as remotes (advanced)
-└── student_6th/              # 学生向けサンプルスクリプト
+├── README.md
+└── README_en.md
 ```
 
-## 使い方
-
-### vaccine サーバー
-
-```bash
-cd job_scripts/vaccine
-sbatch job_example.sh      # main.py のジョブを投入
-sbatch job_machin.sh       # machin_like_formula.py のジョブを投入
-```
-
-#### SLURM オプション（`job_scripts/vaccine/job_example.sh`）
-
-| オプション | 値 | 説明 |
-|---|---|---|
-| `-p` | `GPU-S` | 使用するパーティション |
-| `--gres` | `gpu:1` | GPU 数 |
-| `-n` | `1` | タスク数 |
-| `-t` | `72:00:00` | 最大実行時間 |
-| `-J` | `example` | ジョブ名 |
-| `-o` | `output/%x-%j.out` | ログ出力パス |
-
----
-
-### itc サーバー
-
-```bash
-cd job_scripts/itc25/output
-sbatch job_example.sh      # main.py のジョブを投入
-sbatch job_machine.sh      # main.py のジョブを投入
-```
-
-#### SLURM オプション（`job_scripts/itc25/output/job_example.sh`）
-
-| オプション | 値 | 説明 |
-|---|---|---|
-| `-p` | `gpu_short` | 使用するパーティション（キュー） |
-| `--gres` | `gpu:1` | GPU 数 |
-| `-N` | `1` | ノード数 |
-| `-n` | `8` | タスク数（プロセス数） |
-| `-c` | `1` | タスクあたりの CPU 数（`OMP_NUM_THREADS`） |
-| `-t` | `4:00:00` | 最大実行時間 |
-| `--output` | `output/%x-%j.out` | ログ出力パス |
-
----
-
-## ジョブ状態の確認
-
-```bash
-# 自分のジョブ一覧を表示
-squeue -u $USER
-
-# ログを確認
-cat output/example-<jobid>.out
-```
-
-## ドキュメント
+## ドキュメント一覧
 
 | タイトル | 日本語 | English |
 |---------|--------|---------|
