@@ -30,7 +30,7 @@ ls ~/.ssh/
 # id_ed25519.pub ← 公開鍵
 ```
 
-鍵がない場合は先に作成する（[github_push_jp.md](github_push_jp.md) の Step 2 を参照）。
+鍵がない場合は先に作成する（[03_github_push_jp.md](03_github_push_jp.md) の Step 2 を参照）。
 
 ---
 
@@ -154,4 +154,4 @@ ssh -T git@github.com
 
 ## 関連ドキュメント
 
-- [GitHub Remote Repository の作成と Push](github_push_jp.md)
+- [GitHub Remote Repository の作成と Push](03_github_push_jp.md)

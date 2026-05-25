@@ -325,6 +325,6 @@ git push origin master
 
 ## 関連ドキュメント
 
-- [ベアリポジトリからのクローンと push](server_git_workflow_jp.md)
+- [ベアリポジトリからのクローンと push](01_server_git_workflow_jp.md)
 - [Git 基本操作コマンド集](git_workflow_jp.md)
 - [Git ワークフロー ステップバイステップ](git_workflow_steps_jp.md)

@@ -30,7 +30,7 @@ ls ~/.ssh/
 # id_ed25519.pub ← public key
 ```
 
-If no key exists, create one first (see Step 2 in [github_push_en.md](github_push_en.md)).
+If no key exists, create one first (see Step 2 in [03_github_push_en.md](03_github_push_en.md)).
 
 ---
 
@@ -154,4 +154,4 @@ ssh -T git@github.com
 
 ## Related Documents
 
-- [Creating a Remote Repository on GitHub and Pushing Code](github_push_en.md)
+- [Creating a Remote Repository on GitHub and Pushing Code](03_github_push_en.md)

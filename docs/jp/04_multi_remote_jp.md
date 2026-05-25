@@ -246,4 +246,4 @@ git log server/main..origin/main --oneline
 
 ## 関連ドキュメント
 
-- [GitHub Remote Repository の作成と Push](github_push_jp.md)
+- [GitHub Remote Repository の作成と Push](03_github_push_jp.md)
