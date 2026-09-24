@@ -11,6 +11,7 @@ It contains documents in both Japanese and English, suitable for beginners getti
 Git_Example/
 ├── docs/
 │   ├── jp/                                         # Japanese documents
+│   │   ├── 00_git_github_basics_jp.md              # ⓪ Git vs. GitHub / repository types (intro)
 │   │   ├── 01_server_bare_repo_create_jp.md        # ① Create a bare repository and push
 │   │   ├── 02_server_git_workflow_jp.md            # ② Clone from bare repository and push
 │   │   ├── 03_github_push_jp.md                    # ③ Create GitHub remote repo and push
@@ -20,6 +21,7 @@ Git_Example/
 │   │   ├── github_token_https_jp.md                # Personal Access Token for HTTPS
 │   │   └── vscode_ssh_agent_jp.md                  # SSH agent setup for VSCode GitHub integration
 │   └── en/                                         # English documents
+│       ├── 00_git_github_basics_en.md              # ⓪ Git vs. GitHub / repository types (intro)
 │       ├── 01_server_bare_repo_create_en.md        # ① Create a bare repository and push
 │       ├── 02_server_git_workflow_en.md            # ② Clone from bare repository and push
 │       ├── 03_github_push_en.md                    # ③ Create GitHub remote repo and push
@@ -34,10 +36,16 @@ Git_Example/
 
 ## How to Use This Repository
 
-**Start by reading documents 01–04 in order.** They cover everything from setting up a repository on the server to advanced GitHub integration.
+If this is your first time with Git or GitHub, **start with document 00** to understand the difference between Git and GitHub and the three repository types (local, remote, bare), then **read documents 01–04 in order.** Together they cover everything from setting up a repository on the server to advanced GitHub integration.
 The remaining documents are supplementary — refer to them as needed for command reference or configuration.
 
 ## Documentation
+
+### Getting Started (Git / GitHub Basics)
+
+| # | Title | English | Japanese |
+|---|-------|---------|----------|
+| 0 | Git vs. GitHub and Understanding Repository Types | [EN](docs/en/00_git_github_basics_en.md) | [JP](docs/jp/00_git_github_basics_jp.md) |
 
 ### Server Workflow (Read in This Order)
 

@@ -11,6 +11,7 @@ Git および GitHub の使い方を学ぶためのオープンなリポジト�
 Git_Example/
 ├── docs/
 │   ├── jp/                                         # 日本語ドキュメント
+│   │   ├── 00_git_github_basics_jp.md              # ⓪ Git と GitHub の違い／リポジトリの種類（導入）
 │   │   ├── 01_server_bare_repo_create_jp.md        # ① ベアリポジトリを自分で作って push
 │   │   ├── 02_server_git_workflow_jp.md            # ② ベアリポジトリからのクローンと push
 │   │   ├── 03_github_push_jp.md                    # ③ GitHub リモートリポジトリ作成と push
@@ -20,6 +21,7 @@ Git_Example/
 │   │   ├── github_token_https_jp.md                # HTTPS 用 Personal Access Token の登録
 │   │   └── vscode_ssh_agent_jp.md                  # VSCode GitHub 連携用 SSH エージェント設定
 │   └── en/                                         # English documents
+│       ├── 00_git_github_basics_en.md              # ⓪ Git vs. GitHub / repository types (intro)
 │       ├── 01_server_bare_repo_create_en.md        # ① Create a bare repository and push
 │       ├── 02_server_git_workflow_en.md            # ② Clone from bare repository and push
 │       ├── 03_github_push_en.md                    # ③ Create GitHub remote repo and push
@@ -34,10 +36,16 @@ Git_Example/
 
 ## ドキュメントの読み方
 
-まず **01〜04 のドキュメントを順番に読む** ことで、サーバー上でのリポジトリ作成から GitHub 連携の応用まで一通り理解できます。
+Git や GitHub に初めて触れる方は、まず **00 の導入ドキュメントで Git と GitHub の違い、リポジトリの種類（ローカル／リモート／ベア）を理解**してから、**01〜04 のドキュメントを順番に読む**ことで、サーバー上でのリポジトリ作成から GitHub 連携の応用まで一通り理解できます。
 それ以外のドキュメントはコマンド確認や設定の際に参考として参照してください。
 
 ## ドキュメント一覧
+
+### はじめに（Git / GitHub の基礎）
+
+| # | タイトル | 日本語 | English |
+|---|---------|--------|---------|
+| 0 | Git と GitHub の違い／リポジトリの種類を理解する | [JP](docs/jp/00_git_github_basics_jp.md) | [EN](docs/en/00_git_github_basics_en.md) |
 
 ### サーバー運用ワークフロー（この順番で読んでください）
 
